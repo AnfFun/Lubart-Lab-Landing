@@ -1,10 +1,10 @@
 import { createInertiaApp } from '@inertiajs/vue3';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = import.meta.env.VITE_APP_NAME || 'LubartLab';
 
 createInertiaApp({
-    title: (title) => (title ? `${title} - ${appName}` : appName),
+    title: (title) => title || appName,
     progress: {
-        color: '#4B5563',
+        color: '#f97316',
     },
 });

@@ -41,6 +41,9 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'flash' => [
+                'contactSubmitted' => $request->session()->get('contact.submitted', false),
+            ],
         ];
     }
 }

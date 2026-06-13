@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'contact' => [
+        'inquiry_to' => env('CONTACT_INQUIRY_TO'),
+    ],
+
 ];
